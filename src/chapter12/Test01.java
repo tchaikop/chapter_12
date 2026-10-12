@@ -29,12 +29,25 @@ public class Test01 {
 		System.out.println(integer.size());
 		
 		integer.remove(1);
+		System.out.println("=====");
 		
 //		Iterator<Integer> iterator = integer.iterator();
-	//	while(iterator.hasNext()) {
-//		Integer int1 = iterator.hasNext();
+//		while(iterator.hasNext()) {
+//		Integer int1 = iterator.next();
 //      System.out.println(int1);		
-		// }
+//		 }
+		
+		Iterator<Integer> it = integer.iterator();
+		while(it.hasNext()) {
+			int num = it.next();
+			if (num == 30) {
+				it.remove();
+			}
+		}
+		System.out.println(integer);
+		
+		
+		
 		
 		ArrayList<String> str = new ArrayList<String>();
 		str.add("홍길동");
