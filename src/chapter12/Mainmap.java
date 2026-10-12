@@ -21,7 +21,7 @@ public class Mainmap {
 		
 		
 		Box box = new Box();
-		box.
+		box.setItemName("홍길동");
 		
 		
 		
